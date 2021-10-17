@@ -1,0 +1,43 @@
+{
+  "name": "parcel-optimizer-csp",
+  "version": "0.0.0",
+  "main": "index.js",
+  "engines": {
+    "parcel": "2.x"
+  },
+  "description": "Parcel 2.0+ plugin for generating Content Security Policy that also generates hashes for inline scripts.",
+  "scripts": {
+    "prepublish": "npm run format && npm run lint",
+    "lint": "eslint .",
+    "format": "prettier --write ."
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "parcel",
+    "inline script",
+    "CSP",
+    "Content Security Policy"
+  ],
+  "author": {
+    "name": "Henrik Joreteg",
+    "email": "henrik@joreteg.com",
+    "url": "https://joreteg.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "7.18.0",
+    "parcel": "2.0.0",
+    "prettier": "2.2.1",
+    "tape": "5.0.1"
+  },
+  "prettier": {
+    "semi": false,
+    "arrowParens": "avoid",
+    "singleQuote": true
+  },
+  "dependencies": {
+    "cheerio": "1.0.0-rc.10"
+  }
+}

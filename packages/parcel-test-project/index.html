@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0A3552" />
+    <script>
+      console.log('i am an inline script')
+    </script>
+    <meta name="description" content="Something, something, something" />
+  </head>
+  <body class="sans-serif min-vh-100">
+    <div id="app"></div>
+    <script type="module" src="./index.js"></script>
+    <script>
+      console.log(
+        'i am an inline script in the body should have replaced following var: APP_NAME'
+      )
+    </script>
+  </body>
+  <noscript>
+    <p>
+      Please enable JavaScript in your browser, this app cannot run without it.
+    </p>
+  </noscript>
+  <script>
+    console.log('i am an inline script outside the body')
+  </script>
+</html>

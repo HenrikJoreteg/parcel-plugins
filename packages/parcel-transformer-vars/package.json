@@ -1,0 +1,8 @@
+{
+  "name": "parcel-transformer-vars",
+  "version": "0.0.0",
+  "main": "index.js",
+  "engines": {
+    "parcel": "2.x"
+  }
+}
