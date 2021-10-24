@@ -90,6 +90,7 @@ npm install parcel-transformer-vars
 
 ## Change log
 
+- `1.0.1`: Adding check in case plugin config is not defined yet
 - `1.0.0`: First public release.
 
 ## credits
