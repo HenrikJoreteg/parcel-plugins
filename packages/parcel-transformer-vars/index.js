@@ -15,15 +15,17 @@ module.exports = new Transformer({
     }
 
     const result = []
-    for (const key in contents) {
-      const value = contents[key]
-      const isString = typeof value === 'string'
-      result.push({
-        name: key,
-        regExp: new RegExp('["\']?(' + key + ')["\']?', 'g'),
-        value,
-        isString,
-      })
+    if (contents) {
+      for (const key in contents) {
+        const value = contents[key]
+        const isString = typeof value === 'string'
+        result.push({
+          name: key,
+          regExp: new RegExp('["\']?(' + key + ')["\']?', 'g'),
+          value,
+          isString,
+        })
+      }
     }
 
     return result

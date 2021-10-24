@@ -11,5 +11,9 @@
       "parcel-transformer-vars",
       "..."
     ]
-  }
+  },
+  "reporters": [
+    "...",
+    "parcel-reporter-sw"
+  ]
 }
